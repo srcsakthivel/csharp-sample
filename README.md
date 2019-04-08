@@ -27,19 +27,17 @@ public class Program
 
 ## Encapsulation
 
-Encapsulation is the concept of wrapping data into a single unit.
+Encapsulation is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
 
 ```csharp
-namespace AccessSpecifiers  
-{  
-    class Student  
-    {  
-        // Creating setter and getter for each property  
-        public string ID { get; set; }  
-        public string Name { get; set; }  
-        public string Email { get; set; }  
-    }  
-}
+class Student  
+    {
+        private string Name;        
+        public string getName()
+        {
+            return Name;
+        }
+    }
 ```
 
 ## Inheritance
