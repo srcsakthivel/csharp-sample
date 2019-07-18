@@ -50,7 +50,7 @@ public class Man
     public string name { get; set; }
     public int age { get; set; }
 }  
-public class Employee  
+public class Employee : Man
 {
     public string Department { get; set; }
     public int EmployeeID { get; set; }
